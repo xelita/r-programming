@@ -1,0 +1,31 @@
+print("matrix -----------------------------------")
+m <- matrix(nrow = 2, ncol = 3)
+print(m)
+print(class(m))
+print(attributes(m))
+print(dim(m))
+
+print("matrix with data -------------------------")
+m <- matrix(data = 1:6, nrow = 2, ncol = 3)
+print(m)
+print(class(m))
+
+print("matrix from vector------------------------")
+m <- 1:6
+dim(m) <- c(2, 3)
+print(m)
+print(class(m))
+
+print("cbind ----------------------------------")
+x <- c(1,2,3,4)
+y <- c(1,2)
+z <- cbind(x, y)
+print(z)
+print(class(z))
+
+print("rbind ----------------------------------")
+x <- c(1,2,3,4)
+y <- c(1,2)
+z <- rbind(x, y)
+print(z)
+print(class(z))
