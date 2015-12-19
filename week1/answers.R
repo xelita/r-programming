@@ -46,6 +46,7 @@ x <- x[x$Ozone > 31, ]
 x <- x[x$Temp > 90, ]
 x <- x$Solar.R[!is.na(x$Ozone)]
 print(mean(x))
+## res: 212.8
 
 ## What is the mean of "Temp" when "Month" is equal to 6?
 x <- read.csv(filePath)
